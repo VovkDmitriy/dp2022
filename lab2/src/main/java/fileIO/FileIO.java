@@ -8,9 +8,9 @@ import java.io.ObjectOutputStream;
 
 public class FileIO implements FileIOInteface {
 	
-	private String fileName = "file.txt";
+	private String fileName = "fileObj.txt";
 
-	//hello
+	//hellowoorld
 	
 	public String getFileName() {
 		return fileName;
