@@ -1,0 +1,15 @@
+<body class="body">
+<h1 class="mainname">Insects</h1>
+<div class="container">
+    <h1>Insects list</h1>
+    <button (click)="getInsects()">Get insects</button>
+    <br>
+    <a href="https://gitmind.com/app/flowchart/bd710879950">Diagram</a>
+
+    <ul>
+    <li *ngFor="let ins of insectList">
+        Title: {{ins.title}}, age: {{ins.age}}, description: {{ins.desc}}
+    </li>
+</ul>
+</div>
+</body>
