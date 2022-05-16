@@ -1,0 +1,21 @@
+body {
+    background-color: #39f50f;
+    padding-bottom: 7px;
+
+}
+
+.head{
+    text-align: center;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin-left: 15%;
+    margin-right:15%;
+    
+    margin-top: 7px;
+    margin-bottom: 7px;
+    height: 100%;
+}

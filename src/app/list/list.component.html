@@ -1,0 +1,19 @@
+<h2 class="head">{{title}}</h2>
+<ul>
+    <li *ngFor="let i of insectsList" 
+    (click)="onSelect(i)"
+    >{{i.id}}. {{i.title}} age: {{i.age}} description: {{i.desc}} 
+    <span (click)="deleteInsect(i)"> X </span>
+    </li>
+</ul>
+<div class="container">
+<h3 (click)="showAddForm=!showAddForm">Add insect</h3>
+<form *ngIf="showAddForm" #form1="ngForm" (ngSubmit)="addInsect(form1.value)">
+    <input type="hidden" name="id"  ngModel="-1">
+    <input type="text" name="title"  ngModel><br><br>
+    <input type="number" name="age" ngModel=23><br><br>
+    <input type="text" name="desc"  ngModel><br><br>
+    <input type="submit" value="Add insect">
+</form>
+</div>
+<app-update [insect]="selectedInsect" (updated)="updateInsects()"></app-update>

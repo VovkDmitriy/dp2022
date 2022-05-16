@@ -1,0 +1,9 @@
+<div class="container" *ngIf="insect">
+<h3>Update insect</h3>
+
+<input type="hidden" [(ngModel)]="insect.id">
+<input type="text" [(ngModel)]="insect.title"><br><br>
+<input type="number" [(ngModel)]="insect.age"><br><br>
+<input type="text" [(ngModel)]="insect.desc"><br><br>
+<button (click)="updateInsect()">Update insect</button>
+</div>
