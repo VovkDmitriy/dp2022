@@ -1,0 +1,5 @@
+package lab51.repository;
+
+public interface insRepository {
+
+}
